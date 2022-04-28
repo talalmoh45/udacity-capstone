@@ -1,3 +1,4 @@
+alembic==1.7.7
 appdirs==1.4.3
 apt-clone==0.2.1
 apturl==0.5.2
@@ -25,6 +26,8 @@ entrypoints==0.3
 filelock==3.6.0
 Flask==1.1.2
 Flask-Cors==3.0.8
+Flask-Migrate==2.7.0
+Flask-Script==2.0.6
 Flask-SQLAlchemy==2.5.0
 future==0.17.1
 greenlet==1.1.2
@@ -35,6 +38,7 @@ idna==2.8
 ifaddr==0.1.6
 IMDbPY==6.8
 importlib-metadata==4.11.3
+importlib-resources==5.7.1
 iniconfig==1.1.1
 isort==4.3.18
 itsdangerous==1.1.0
@@ -64,6 +68,7 @@ platformdirs==2.5.2
 pluggy==0.13.1
 protobuf==3.6.1
 psutil==5.5.1
+psycopg2-binary==2.9.1
 py==1.11.0
 pycairo==1.16.2
 pycparser==2.21
