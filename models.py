@@ -1,6 +1,5 @@
 from numbers import Integral
 import os
-from turtle import title
 from xmlrpc.client import DateTime, boolean 
 from flask_sqlalchemy import SQLAlchemy
 # from pytz import timezone
