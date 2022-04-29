@@ -18,11 +18,7 @@ def setup_database(app,path=database_path):
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"]=False
     db.app=app
     db.init_app(app)
-    # movie=Movies(title='12 Angry Men')
-    # actor=Actors(name='Henry Fonda',age='45',gender='M')
     db.create_all()
-    # insert(movie)
-    # insert(actor)
 
     
 
