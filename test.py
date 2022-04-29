@@ -5,7 +5,7 @@ from app import create_app
 import json
 from flask_sqlalchemy import SQLAlchemy
 
-from models import setup_database
+from models import setup_database,database_path
 
 
 
@@ -19,7 +19,7 @@ class CapstoneTestCase(unittest.TestCase):
         self.casting_director_token=os.environ['casting_director_token']
         self.casting_assistant_token=os.environ['casting_assistant_token']
         self.client=self.app.test_client
-        self.database_path="postgresql://{}:{}@{}/{}".format('postgres','','localhost:5432','castageny')
+        self.database_path=database_path
         setup_database(self.app,self.database_path)
 
 
