@@ -6,14 +6,43 @@ The Casting Agency Api is a simple api whitch allow authorize people to do ceart
 - Casting Director: Can get or delete or update actors,can get and update movies.
 - Executive Producer: Can view, add, modify, or delete actors and movies. 
 
-# Running the API [TODO]
+# Running the API 
 
 API endpoints can be accessed via https://udacity-capstone-proj.herokuapp.com/login
 
 
+# Running Locally 
+
+* First install Dependancies 
+```
+pip install -r requirements.txt
+```
+
+* Populate The database using these commnds:
+
+```
+createdb castagency
+```
+
+```
+psql castagency < castagency.sql
+
+```
+
+* Run The server:
+
+```
+export FLASK_APP=app.py
+export FLASK_ENV=development
+flask run
+
+```
+
+
+
 # Running tests
 
-To run the unittests, first CD into the Capstone folder and run the following command:
+To run the test file,run the following command:
 ```
 python test.py
 ```
@@ -28,6 +57,8 @@ Errors
 `403`
 `404`
 `405`
+
+
 
 
 
