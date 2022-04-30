@@ -9,7 +9,6 @@ import json
 from settings import DB_NAME, DB_PASSWORD,DB_USER
 
 
-# database_path="postgresql://{}:{}@{}/{}".format(DB_USER,DB_PASSWORD,'localhost:5432',DB_NAME)
 database_path=os.environ['DATABASE_URL']
 if database_path.startswith("postgres://"):
   database_path = database_path.replace("postgres://", "postgresql://", 1)

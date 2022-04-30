@@ -31,9 +31,14 @@ def create_app(test_config=None):
 #---------------------------------
 
 
+    @app.route('/')
+    def index():
+
+        return jsonify({'message':'Welcome To Agency API !'})
+
 # simple log in page with one button 
     @app.route('/login')
-    def index():
+    def login_page():
         return render_template('index.html')
 
 
