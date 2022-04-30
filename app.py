@@ -275,13 +275,15 @@ def create_app(test_config=None):
             "message": "not found."
         }), 404
 
-    @app.errorhandler(422)
-    def unprocessable(error):
+
+    @app.errorhandler(405)
+    def not_found(error):
         return jsonify({
             "success": False,
-            "error": 422,
-            "message": "Request could not be processed."
-        }), 422
+            "error": 405,
+            "message": "Method Not Alowed"
+        }), 404
+
 
     @app.errorhandler(AuthError)
     def auth_error(error):
